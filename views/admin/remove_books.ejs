@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<title>Admin - remove Books</title>
+</head>
+<body>
+<form action="/api/remove_books" method="POST">
+	<% book.forEach(function(item) { %>
+		<div class="book-item">
+			<div class="description">
+				<input type="checkbox" name="id" value="<%=item._id%>">
+				<%= item.title %> - <%= item.price %> - <%= item.author%> - <%=item.type%> - <%= item.description%> - <%=item.date%> -<img src="../<%= item.image%>" />
+			</div>
+		</div>
+	<% }); %>
+
+	<button type="submit">
+		submit
+	</button>
+</form>
+<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../js/style.js"></script>
+</body>
+</html>

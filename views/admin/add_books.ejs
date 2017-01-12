@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<title>Admin - Book</title>
+</head>
+<body>
+	<form action="/api/add_books" method="POST" enctype="multipart/form-data">
+		<h3>Title</h3>
+		<input type="text" name="title" placeholder="Title" />
+
+		<h3>Price</h3>
+		<input type="text" name="price" placeholder="Price" />
+
+		<h3>Author</h3>
+		<input type="text" name="author" placeholder="Author" />
+
+		<h3>Type</h3>
+		<input type="text" name="type" placeholder="Type" />
+
+		<h3>Description</h3>
+		<input type="text" name="description" placeholder="Description" />
+
+		<h3>Date</h3>
+		<input type="text" name="date" placeholder="Date" />
+
+		<h3>Image</h3>
+		<input type="file" name="image" accept="image/x-png,image/jpg,image/jpeg" />
+
+		<button type="submit">Submit </button>
+	</form>
+
+
+
+<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../js/style.js"></script>
+</body>
+</html>

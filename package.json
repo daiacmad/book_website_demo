@@ -1,0 +1,24 @@
+{
+  "name": "books-website",
+  "version": "1.0.0",
+  "description": "books website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "node-todos"
+  ],
+  "author": "Trung",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "connect-multiparty": "^2.0.0",
+    "ejs": "^2.5.3",
+    "express": "^4.14.0",
+    "fileupload": "^1.0.0",
+    "mongoose": "^4.7.0",
+    "multer": "^1.2.1"
+  }
+}
