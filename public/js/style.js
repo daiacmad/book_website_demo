@@ -39,6 +39,7 @@ var InputAddBook = React.createClass({
 	render(){
 		return(
 			<div className="book-form">
+				<h2>test brand</h2>
 				<h3 className="book-input-text">Title</h3>
 				<input type="text" ref="title" placeholder="Title" />
 
